@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="București după lăsarea serii – un proiect multimedia ce surprinde magia capitalei la ceas de noapte." />
+  <title>București Nocturn</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Sans:wght@200;300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__brand">BN</div>
+    <button class="nav__toggle" id="navToggle" aria-label="Meniu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#acasa" class="nav__link">Acasă</a></li>
+      <li><a href="#galerie" class="nav__link">Galerie</a></li>
+      <li><a href="#poveste" class="nav__link">Poveste</a></li>
+      <li><a href="#despre-noi" class="nav__link">Despre noi</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="acasa">
+    <div class="hero__stars" id="stars"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">proiect multimedia</p>
+      <h1 class="hero__title">
+        <span class="hero__line">București</span>
+        <span class="hero__line hero__line--italic">după lăsarea</span>
+        <span class="hero__line">serii</span>
+      </h1>
+      <p class="hero__sub">Când luminile aprinse înlocuiesc soarele, orașul capătă un alt suflet.</p>
+      <a href="#galerie" class="hero__cta">Explorează galeria</a>
+    </div>
+    <div class="hero__scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- INTRO BAND -->
+  <div class="band">
+    <p class="band__text">Palatul Parlamentului &nbsp;·&nbsp; Calea Victoriei &nbsp;·&nbsp; Piața Unirii &nbsp;·&nbsp; Arcul de Triumf &nbsp;·&nbsp; Ateneul Român &nbsp;·&nbsp; Herăstrău &nbsp;·&nbsp;</p>
+    <p class="band__text" aria-hidden="true">Palatul Parlamentului &nbsp;·&nbsp; Calea Victoriei &nbsp;·&nbsp; Piața Unirii &nbsp;·&nbsp; Arcul de Triumf &nbsp;·&nbsp; Ateneul Român &nbsp;·&nbsp; Herăstrău &nbsp;·&nbsp;</p>
+  </div>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="galerie">
+    <div class="section-header">
+      <span class="section-header__num">01</span>
+      <h2 class="section-header__title">Galerie foto</h2>
+      <p class="section-header__sub">Trei momente capturate și prelucrate în capitala nocturnă</p>
+    </div>
+
+    <div class="gallery__grid">
+
+      <!-- Image 1 -->
+      <article class="gallery__item" data-index="1">
+        <div class="gallery__frame">
+          <div class="gallery__img-wrap">
+            <img
+              src="images/palatul-parlamentului.jpg"
+              alt="Palatul Parlamentului noaptea – fațada iluminată reflectată în apă"
+              class="gallery__img"
+              loading="lazy"
+            />
+            <div class="gallery__overlay">
+              <span class="gallery__zoom">&#8599;</span>
+            </div>
+          </div>
+          <div class="gallery__caption">
+            <h3 class="gallery__name">Palatul Parlamentului</h3>
+            <p class="gallery__location">Bulevardul Națiunile Unite, București</p>
+            <div class="gallery__tech">
+              <span class="gallery__tech-label">Tehnică de prelucrare</span>
+              <span class="gallery__tech-name">Corecție de Expunere și Contrast</span>
+              <p class="gallery__tech-desc">
+                Au fost aplicate corecții de bază asupra nivelurilor de contrast și lumină <strong>Highlights & Shadows</strong> pentru a recupera detaliile din zonele puternic iluminate și a adânci negrul nopții. Rezultatul este o imagine vibrantă, cu un impact vizual puternic, care captează fidel prezența impunătoare a clădirii.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Image 2 -->
+      <article class="gallery__item" data-index="2">
+        <div class="gallery__frame">
+          <div class="gallery__img-wrap">
+            <img
+              src="images/calea-victoriei.jpg"
+              alt="Calea Victoriei noaptea – șirul de lumini stradale galbene"
+              class="gallery__img"
+              loading="lazy"
+            />
+            <div class="gallery__overlay">
+              <span class="gallery__zoom">&#8599;</span>
+            </div>
+          </div>
+          <div class="gallery__caption">
+            <h3 class="gallery__name">Calea Victoriei</h3>
+            <p class="gallery__location">Centrul Istoric, București</p>
+            <div class="gallery__tech">
+              <span class="gallery__tech-label">Tehnică de prelucrare</span>
+              <span class="gallery__tech-name">Ajustări cromatice &amp; Curves</span>
+              <p class="gallery__tech-desc">
+                S-au aplicat ajustări de <strong>Hue/Saturation</strong> și <strong>Curves</strong> pentru a accentua tonurile calde de chihlimbar ale luminilor clădirilor, reducând în același timp luminozitatea zonelor reci pentru a crea contrast dramatic între lumini și umbre.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Image 3 -->
+      <article class="gallery__item" data-index="3">
+        <div class="gallery__frame">
+          <div class="gallery__img-wrap">
+            <img
+              src="images/piata-unirii.jpg"
+              alt="Piața Unirii noaptea – fântâna luminoasă și aglomerarea urbană"
+              class="gallery__img"
+              loading="lazy"
+            />
+            <div class="gallery__overlay">
+              <span class="gallery__zoom">&#8599;</span>
+            </div>
+          </div>
+          <div class="gallery__caption">
+            <h3 class="gallery__name">Piața Unirii</h3>
+            <p class="gallery__location">Centrul Civic, București</p>
+            <div class="gallery__tech">
+              <span class="gallery__tech-label">Tehnică de prelucrare</span>
+              <span class="gallery__tech-name">Color Grading &amp; Calibrare Cromatică</span>
+              <p class="gallery__tech-desc">
+                Prelucrarea s-a concentrat pe ajustarea tonurilor de culoare <strong>Color Grading</strong> pentru a accentua nuanțele pastelate ale cerului la apus. Balansul contrastului evidențiază tranziția lină dintre lumina naturală și iluminatul stradal, oferind o atmosferă cinematică peisajului urban.
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Vizualizare imagine">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Închide">&times;</button>
+    <img src="" alt="" class="lightbox__img" id="lightboxImg" />
+    <p class="lightbox__caption" id="lightboxCaption"></p>
+  </div>
+
+  <!-- STORY SECTION -->
+  <section class="story" id="poveste">
+    <div class="story__deco" aria-hidden="true">22:00</div>
+    <div class="section-header">
+      <span class="section-header__num">02</span>
+      <h2 class="section-header__title">Povestea orașului</h2>
+    </div>
+    <div class="story__body">
+      <div class="story__block">
+        <h3 class="story__heading">Lumina ca arhitectură</h3>
+        <p class="story__text">
+          Bucureștiul de noapte este un alt oraș. Dincolo de zgomotul zilei, după ce soarele coboară dincolo de orizontul urban, clădirile îşi capătă o nouă dimensiune — nu prin formă, ci prin lumină. Fațadele transformate în panouri luminoase, reflexiile în asfaltul umed, halosul auriu al lămpilor stradale: toate acestea alcătuiesc o arhitectură paralelă, invizibilă în plină zi.
+        </p>
+      </div>
+      <div class="story__block">
+        <h3 class="story__heading">Orașul care nu doarme</h3>
+        <p class="story__text">
+          „Micul Paris" nu și-a pierdut cochetăria la căderea nopții. Bulevardele largi devin culoare de lumină, iar siluetele trecătorilor se înscriu în peisaj ca personaje dintr-un roman noir. Proiectul de față încearcă să surprindă tocmai această dualitate: între grandoarea arhitecturală moștenită și vibrația contemporană a orașului.
+        </p>
+      </div>
+      <div class="story__block">
+        <h3 class="story__heading">Fotografia ca memorie</h3>
+        <p class="story__text">
+          Fiecare imagine din această colecție a fost prelucrată pentru a amplifica ceea ce ochiul simte, dar nu întotdeauna vede: temperatura culorii luminii artificiale, mișcarea îngheţată a unui moment, adâncimea umbrelor care ascund și dezvăluie în același timp. Prelucrarea grafică nu denaturează realitatea — o traduce în limbajul emoției.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US -->
+  <section class="about" id="despre-noi">
+    <div class="section-header">
+      <span class="section-header__num">03</span>
+      <h2 class="section-header__title">Despre noi</h2>
+      <p class="section-header__sub">Proiect realizat în cadrul cursului de Multimedia</p>
+    </div>
+
+    <div class="about__cards">
+
+      <div class="about__card">
+        <div class="about__avatar" aria-hidden="true">TC</div>
+        <div class="about__info">
+          <h3 class="about__name">Turnea Cristian</h3>
+          <ul class="about__details">
+            <li>
+              <span class="about__icon">🎓</span>
+              <span>Facultatea de Marketing, ASE București</span>
+            </li>
+            <li>
+              <span class="about__icon">📅</span>
+              <span>Anul II</span>
+            </li>
+            <li>
+              <span class="about__icon">👥</span>
+              <span>Grupa 1734</span>
+            </li>
+            <li>
+              <span class="about__icon">🔤</span>
+              <span>Seria C</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Project Description -->
+    <div class="about__project">
+      <h3 class="about__project-title">Descrierea proiectului</h3>
+      <p class="about__project-text">
+        Proiectul <em>„București după lăsarea serii"</em> este realizat individual de studentul <strong>Turnea Cristian</strong>, Facultatea de Marketing, ASE București, Anul II, Grupa 1734, Seria C.
+      </p>
+      <p class="about__project-text">
+        Site-ul a fost conceput în paradigma <strong>mobile first</strong> și prezintă o serie de trei fotografii originale ale capitalei surprinse în timpul serii și în timpul nopții, fiecare prelucrată cu tehnici specifice de editare grafică: corecție de expunere și contrast, ajustări cromatice prin Curves &amp; Hue/Saturation, respectiv color grading & calibrare cromatică. Tema vizuală urmărește contrastul dintre întunericul urban și lumina artificială care redefineşte spațiul nocturn al Bucureștiului.
+      </p>
+      <div class="about__tags">
+        <span class="about__tag">Mobile First</span>
+        <span class="about__tag">HTML5</span>
+        <span class="about__tag">CSS3</span>
+        <span class="about__tag">JavaScript</span>
+        <span class="about__tag">Photoshop</span>
+        <span class="about__tag">Multimedia</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__brand">București Nocturn</div>
+    <p class="footer__copy">
+      &copy; 2026 Turnea Cristian &mdash; Facultatea de Marketing, ASE &mdash; Proiect Multimedia
+    </p>
+    <p class="footer__links">
+      <a href="#acasa" class="footer__link">Acasă</a>
+      <a href="#galerie" class="footer__link">Galerie</a>
+      <a href="#despre-noi" class="footer__link">Despre noi</a>
+    </p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
